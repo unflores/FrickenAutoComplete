@@ -20,7 +20,7 @@
           $auto_complete.after($chosen);
         },
         set_keypress_handlers : function(){
-          $('.auto_term').live('keyup', function(event) {
+          $('.auto_term').live('keydown', function(event) {
             var $auto_term = $(this);
             //if no text in input, then focus on previous term
             if (event.keyCode == _key.backspace && $auto_term.val().length == 0) {
@@ -34,7 +34,7 @@
             // }
           });
           
-          $('.auto_complete .selector .tag').live('keyup', function(event) {
+          $('.auto_complete .selector .tag').live('keydown', function(event) {
               if(event.keyCode == _key.backspace){
                 methods.removeTag($(this).attr('data-tag'));
               }
@@ -65,6 +65,7 @@
             removed = tags.splice(remove_index, 1);
             $selector_tag = $('.auto_complete .selector li [data-tag="' + tag + '"]');
             $selector_tag.parent().remove();
+            $('.next').prev().find('.tag').focus();
           }
           
         },

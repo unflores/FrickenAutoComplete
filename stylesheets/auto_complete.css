@@ -2,24 +2,28 @@
   min-height: 20px;
   min-width: 260px;
   border: solid black 1px; }
-  #content_body .auto_complete .selector li {
-    display: inline-block;
-    margin: 2px 2px;
-    border: solid black 1px;
-    line-height: 22px;
-    padding: 0 5px;
-    background: #fff;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px; }
-    #content_body .auto_complete .selector li a {
-      font-size: 10px;
-      color: black;
-      font-size: 15px; }
-  #content_body .auto_complete .selector .next {
-    margin-left: 0;
-    padding-left: 0;
-    background: none;
-    border: none; }
-    #content_body .auto_complete .selector .next input {
-      border: none;
-      background: none; }
+  #content_body .auto_complete .selector {
+    margin: 0;
+    padding: 0; }
+    #content_body .auto_complete .selector li {
+      display: inline-block;
+      margin: 2px 2px;
+      border: solid black 1px;
+      line-height: 22px;
+      padding: 0 5px;
+      background: #fff;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px; }
+      #content_body .auto_complete .selector li a {
+        font-size: 10px;
+        color: black;
+        font-size: 15px; }
+    #content_body .auto_complete .selector .next {
+      margin-left: 0;
+      padding-left: 0;
+      background: none;
+      border: none; }
+      #content_body .auto_complete .selector .next input {
+        border: none;
+        outline: none;
+        background: none; }
