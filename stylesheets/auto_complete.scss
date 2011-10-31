@@ -1,0 +1,45 @@
+@mixin content_pane{
+  border: 3px solid #222; 
+  box-shadow: 3px 3px 6px 1px #555;
+  padding: 5px 20px 10px 15px; 
+  background: #EBEBE3;
+  @include rounded_corners(20px)
+}
+
+@mixin rounded_corners($radius: 8px){
+  -moz-border-radius: $radius; 
+  -webkit-border-radius: $radius;
+}
+#content_body{
+  .auto_complete{
+    min-height: 20px;
+    min-width: 260px;
+    border: solid black 1px;
+    .selector{
+      li{
+        display: inline-block;
+        margin: 2px 2px;
+        border: solid black 1px;
+        line-height: 22px;
+        padding: 0 5px;
+        background: #fff;
+        @include rounded_corners( 10px );
+        a{
+          font-size: 10px;
+          color: black;
+          font-size: 15px;
+        }
+      }
+      .next{
+        margin-left: 0;
+        padding-left: 0;
+        background: none;
+        border: none;
+        input{
+          border: none;
+          background: none;
+        }
+      }
+    }
+  }
+}

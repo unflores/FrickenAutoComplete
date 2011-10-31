@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='Austin Flores' name='author'>
+    <meta content='Auto Complete' name='description'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <title>Austin Flores - Auto Complete</title>
+    <link href="stylesheets/auto_complete.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="javascripts/jquery.js" type="text/javascript"></script>
+    <script src="javascripts/auto_complete.js" type="text/javascript"></script>
+    <script src="javascripts/application.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id='header'>
+      <h1>Auto Complete in action</h1>
+    </div>
+    <hr>
+    <ul id='nav'>
+      <li><a href="http://github.com/unflores">Github</a></li>
+    </ul>
+    <div id='wrapper'>
+      <div id='content_body'>
+        <h2>The Blog</h2>
+        <h3>Editing post</h3>
+        <form accept-charset="UTF-8" action="/posts" class="edit_post" method="post">
+          <table>
+            <tr>
+              <th><label for="post_Tags">Tags</label></th>
+              <td><input id="post_tag_list" name="post[tag_list]" size="30" type="text" value="Rails, ruby, style" /></td>
+            </tr>
+          </table>
+          <input id="post_submit" name="commit" type="submit" value="Save" />
+        </form>
+      </div>
+      <div id='foot'>
+      </div>
+    </div>
+  </body>
+</html>
